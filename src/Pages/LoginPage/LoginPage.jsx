@@ -30,7 +30,7 @@ const LoginPage = () => {
   const loginBtnClick = (e) => {
     axios
       .post(
-        "http://13.209.48.23/api/login",
+        "https://codeagain.kro.kr/api/login",
         { email: email, password: pw },
         {
           headers: {

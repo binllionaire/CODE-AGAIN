@@ -13,7 +13,7 @@ import axios from 'axios';
 
   const viewNote = (id) => {
     axios
-    .get("http://13.209.48.23/api/notes/"+id, {
+    .get("https://codeagain.kro.kr/api/notes/"+id, {
       params : id,
       headers: {
         "X-AUTH-TOKEN": accessToken,
@@ -31,7 +31,7 @@ import axios from 'axios';
   useEffect(() => {
 
   axios
-  .get("http://13.209.48.23/api/notes", {
+  .get("https://codeagain.kro.kr/api/notes", {
     headers: {
       "X-AUTH-TOKEN": accessToken,
     },
